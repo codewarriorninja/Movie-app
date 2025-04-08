@@ -13,7 +13,7 @@ const SearchBar = ({onPress,placeholder}:Props) => {
         <Image
         source={icons.search}
          className='size-5'
-        resizeMethod='contain'
+        resizeMode='contain'
         tintColor={'#ab8bff'}
         />
         <TextInput 
