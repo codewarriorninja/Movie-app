@@ -7,6 +7,7 @@ import { icons } from '@/constants/icons';
 import SearchBar from '@/components/SearchBar';
 import { useEffect, useState } from 'react';
 
+
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const {
@@ -20,6 +21,7 @@ const Search = () => {
   }),false);
 
   useEffect(() => {
+    // updateSearchCount(searchQuery, movies[0]);
     const func =setTimeout(async() => {
     if(searchQuery.trim()){
       await loadMovies();
