@@ -71,10 +71,10 @@ const MovieDetails = () => {
            label='Geners'
            value={movie?.genres?.map((genre:any) => genre.name).join(', ') || 'N/A'}
           />
-          {/* <MovieInfo 
+          <MovieInfo 
            label='Release Date'
            value={movie?.release_date}
-          /> */}
+          />
           <View>
             <MovieInfo
             label='Revenue'
